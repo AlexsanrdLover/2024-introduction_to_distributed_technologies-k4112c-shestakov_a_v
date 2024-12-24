@@ -1,9 +1,27 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="Страница — 1" id="YUZFAmS85OvTa3SsjpW8">
-    <mxGraphModel>
+    <mxGraphModel dx="612" dy="318" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="23q1XJBd23syNFzZIGz0-1" value="&lt;div&gt;spec:&lt;/div&gt;&lt;div&gt;&amp;nbsp; type: NodePort&lt;/div&gt;&lt;div&gt;&amp;nbsp; selector:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; app: frontend&lt;/div&gt;&lt;div&gt;&amp;nbsp; ports:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - port: 3000&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; targetPort: 3000&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; nodePort: 30001&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="150" y="410" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="23q1XJBd23syNFzZIGz0-2" value="&lt;div&gt;kind: Service&lt;/div&gt;&lt;div&gt;metadata:&lt;/div&gt;&lt;div&gt;&amp;nbsp; name: frontend-service&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="370" width="185" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="23q1XJBd23syNFzZIGz0-3" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="540" as="sourcePoint" />
+            <mxPoint x="210" y="640.5714721679688" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23q1XJBd23syNFzZIGz0-4" value="&lt;div&gt;kind: Deployment&lt;/div&gt;&lt;div&gt;metadata:&lt;/div&gt;&lt;div&gt;&amp;nbsp; name: frontend-deployment&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="135" y="650" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="23q1XJBd23syNFzZIGz0-5" value="&lt;div&gt;spec:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; containers:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - name: frontend&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; image: ifilyaninitmo/itdt-contained-frontend:master&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ports:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - containerPort: 3000&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; env:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - name: REACT_APP_USERNAME&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; value: &quot;Shestakov&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - name: REACT_APP_COMPANY_NAME&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; value: &quot;ITMO&quot;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="65" y="690" width="300" height="160" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
